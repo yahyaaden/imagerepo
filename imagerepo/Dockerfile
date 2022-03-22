@@ -10,6 +10,6 @@ COPY requirements.txt /imagerepo
 RUN python -m pip install --upgrade pip
 RUN pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org --no-cache-dir -r requirements.txt
 
-# Run app.py when the container launches
+# Run imagerepo.py when the container launches
 COPY imagerepo.py /imagerepo
 CMD python imagerepo.py
